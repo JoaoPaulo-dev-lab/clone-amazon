@@ -1,4 +1,4 @@
-# amazon
+# amazon clone
 
 ## Project setup
 ```

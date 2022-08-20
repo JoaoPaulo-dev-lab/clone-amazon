@@ -106,7 +106,7 @@ export default {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        margin-left: 10px;
+        border: 10px solid rgba(0, 0, 0, 0);
         transition: 1s;
         cursor: pointer;
     }
