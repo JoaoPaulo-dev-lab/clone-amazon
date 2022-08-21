@@ -66,7 +66,7 @@ export default {
         width: 100%; 
         padding: 0 5%;
         position: relative;
-        margin: 10px 0;
+        margin: 10px 0 35px 0;
     }
 
     .gradient{
@@ -99,6 +99,45 @@ export default {
     .carousel__prev,.carousel__next{z-index: 99999;background-color: #0e88b1;}
 
     .carousel__icon{background-color:#0e88b1;border-radius: 50%;}
+
+
+    @media screen and (max-width:970px){
+
+        .gradient{
+        position: absolute;
+        width: 7%;
+        height: 45vh;
+        
+
+    }
+        .banner{
+        width: 100%;
+        height: 45vh;
+        
+    }
+    }
+
+     @media screen and (max-width:500px){
+
+        .gradient{
+        position: absolute;
+        width: 7%;
+        height: 27vh;
+        display: none;        
+
+    }
+
+    .carousel__prev,.carousel__next{display: none !important;}
+
+    .carousel__icon{display:none;}
+        
+        .banner{
+        width: 100%;
+        height: 27vh;
+        
+    }
+    }
+
 
     
 </style>

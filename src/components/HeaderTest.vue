@@ -5,6 +5,7 @@
             <div class="logo">
                 <img class="logo-prime" src="../assets/prime.png"/>
             </div>
+            
             <div class="menu-desktop">
                 <ul>
                     <li>
@@ -22,7 +23,12 @@
                 </ul>
             </div>
         </div>
-        <div style="display: flex; align-items: center;">
+        <div class="menu-mobile">
+                <h2>
+                    <i class="fa fa-bars"></i>
+                </h2>
+            </div>
+        <div  class="search-container">
             <div class="content-header-2">
                     <h4>
                         <i class="fa fa-search"></i>
@@ -102,9 +108,21 @@ export default {
         cursor: pointer;
     }
 
+    header .search-container{
+        display: flex; 
+        align-items: center;
+    }
+
     .logo-prime{
         max-width: 120px;
         margin-right: 15px;
+    }
+
+    .menu-mobile{
+        color: #fff;
+        font-size: 18px;
+        display: none;
+        cursor: pointer;
     }
 
     .menu-desktop ul{
@@ -128,5 +146,23 @@ export default {
         color: rgb(242, 244, 247, .9);
         cursor: pointer;
     }
+    
+    @media screen and (max-width: 915px){
+        header .menu-desktop{
+            display: none;
+        }
+        header .search-container{
+            display: none;
+        }
+        header .menu-mobile{
+            display: flex;
+        }
+    }
 
+    @media screen and (max-width: 400px) {
+        header .logo-prime{
+        max-width: 80px;
+        
+    }
+    }
 </style>
