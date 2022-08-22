@@ -23,10 +23,10 @@
                 </ul>
             </div>
         </div>
-        <div class="menu-mobile">
-                <h2>
+            <div class="menu-mobile">
+                <a class="icon-menu">
                     <i class="fa fa-bars"></i>
-                </h2>
+                </a>
             </div>
         <div  class="search-container">
             <div class="content-header-2">
@@ -120,7 +120,7 @@ export default {
 
     .menu-mobile{
         color: #fff;
-        font-size: 18px;
+        font-size: 30px;
         display: none;
         cursor: pointer;
     }
@@ -157,6 +157,7 @@ export default {
         header .menu-mobile{
             display: flex;
         }
+        /* Daqui em diante*/
     }
 
     @media screen and (max-width: 400px) {
