@@ -80,7 +80,7 @@ const banners2 = [
     },
     {
         id: 7,
-        bannerURL: 'https://blog.livrariasfamiliacrista.com.br/wp-content/uploads/2019/07/At%C3%A9-o-ultimo-homem.jpg'
+        bannerURL: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/2f4f4632e0873ff79035ec26bcee8605049d4d5261524f30b724904f58cba6ae._UY500_UX667_RI_V_TTW_.jpg'
     },
     {
         id: 8,
