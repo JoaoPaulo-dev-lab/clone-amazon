@@ -24,8 +24,24 @@
             </div>
         </div>
             <div class="menu-mobile">
+                <div :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
+                    <ul>
+                        <li>
+                        <a href="">Início</a>
+                        </li>
+                        <li>
+                            <a href="">Filmes</a>
+                        </li>
+                        <li>
+                            <a href="">Series</a>
+                        </li>
+                        <li>
+                            <a href="">Infantil</a>
+                        </li>
+                    </ul>
+                </div>
                 <a class="icon-menu">
-                    <i class="fa fa-bars"></i>
+                    <i @click="showMenu()" class="fa fa-bars"></i>
                 </a>
             </div>
         <div  class="search-container">
@@ -53,6 +69,16 @@
 <script>
 export default {
     name: 'HeaderTest',
+    data(){
+        return {
+            showMobileMenu: false,
+        };
+    },
+    methods: {
+        showMenu() {
+            this.showMobileMenu = !this.showMobileMenu
+        }
+    }
 }
 </script>
 
@@ -119,7 +145,7 @@ export default {
     }
 
     .menu-mobile{
-        color: #fff;
+        color: rgb(242, 244, 247, .9);
         font-size: 30px;
         display: none;
         cursor: pointer;
@@ -158,6 +184,25 @@ export default {
             display: flex;
         }
         /* Daqui em diante*/
+        header .menu-mobile ul li{
+            display: block;
+        }
+        header .menu-mobile ul li a{
+            list-style: none;
+            color: rgb(242, 244, 247, .9);
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+        .open-menu {
+            opacity: 1;
+            transition: 1s;
+        }
+        .closed-menu {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+        }
     }
 
     @media screen and (max-width: 400px) {
