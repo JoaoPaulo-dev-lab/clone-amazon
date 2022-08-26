@@ -14,8 +14,8 @@
                 </div>
             </template>
         </carousel>
-        <div class="gradient left"></div>
-        <div class="gradient right"></div>
+            <div class="gradient left"></div>
+            <div class="gradient right"></div>
         </div>
     
 </template>
@@ -76,65 +76,49 @@ export default {
         background-color: #0f171e;
         top: 0;
         z-index: 0;
-
     }
-
     .right {
         right: 0;
     }
-
     .left{
         left: 0;
     }
-
     .banner{
         width: 100%;
         height: 70vh;
         background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
-        
+        background-repeat: no-repeat;   
     }
-
     .carousel__prev,.carousel__next{z-index: 99999;background-color: #0e88b1;}
-
     .carousel__icon{background-color:#0e88b1;border-radius: 50%;}
 
-
     @media screen and (max-width:970px){
-
         .gradient{
         position: absolute;
         width: 7%;
         height: 45vh;
-        
-
     }
         .banner{
         width: 100%;
         height: 45vh;
-        
     }
     }
 
      @media screen and (max-width:500px){
-
         .gradient{
         position: absolute;
         width: 7%;
         height: 27vh;
         display: none;        
-
     }
 
     .carousel__prev,.carousel__next{display: none !important;}
-
     .carousel__icon{display:none;}
-        
-        .banner{
+       
+       .banner{
         width: 100%;
-        height: 27vh;
-        
+        height: 27vh; 
     }
     }
 

@@ -6,7 +6,6 @@
     <MoreMovies :banners="banners1"/>
     <div class="span">Mais assistidos</div>
     <MoreMovies :banners="banners2"/>
-
   </div>
 </template>
 
@@ -14,7 +13,6 @@
 import HeaderTest from '../src/components/HeaderTest.vue'
 import BannerTest from '../src/components/BannerTest.vue'
 import MoreMovies from '../src/components/MoreMovies.vue'
-
 import '@fortawesome/fontawesome-free/css/all.css'
 
 const banners1 = [
@@ -51,8 +49,6 @@ const banners1 = [
         bannerURL: 'https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/d005998f8d2b18b0ed1a3c7b08c7ed9c4ecfd0dbae763a794bdf02391c7b28a5._UY500_UX667_RI_V_TTW_.jpg'
     }
 ]
-
-
 const banners2 = [
     {
         id: 1,

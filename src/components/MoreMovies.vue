@@ -1,14 +1,9 @@
 <template>
-    
         <div class="container-slider2">
-            
             <carousel   :items-to-show="numberSliders || 4">
                 <slide   v-for="banner in banners" :key="banner.id">
-                    <div :style="{'background-image': `url(${banner.bannerURL})`}" class="banner2">
-
-                    </div>
+                    <div :style="{'background-image': `url(${banner.bannerURL})`}" class="banner2"></div>
                 </slide>
-
                 <template #addons>
                     <div >
                    
@@ -18,15 +13,11 @@
             <div class="gradient2 left"></div>
             <div class="gradient2 right"></div>
         </div>
-    
 </template>
 
 <script>
 // carousel__prev carousel__prev--in-active
 // carousel__icon
-
-
-
 import 'vue3-carousel/dist/carousel.css';
 import {Carousel, Slide} from 'vue3-carousel'
 export default {
@@ -55,9 +46,7 @@ export default {
     mounted(){
         this.setNumbersSliders()
         window?.addEventListener('resize', this.setNumbersSliders)
-    },
-
-   
+    },   
 }
 </script>
 
@@ -68,7 +57,6 @@ export default {
         position: relative;
         margin: 10px 0 30px 0;
     }
-
     .gradient2{
         position: absolute;
         width: 7%;
@@ -76,7 +64,6 @@ export default {
         background-color: #0f171e;
         top: 0;
         z-index: 0;
-
     }
 
     .right {
@@ -107,8 +94,6 @@ export default {
     .carousel__icon{background-color:#0e88b1;border-radius: 50%;}
 
     @media screen and (max-width: 1465px) {
-    
-
     .gradient2{
         position: absolute;
         width: 7%;
@@ -116,7 +101,6 @@ export default {
         background-color: #0f171e;
         top: 0;
         z-index: 0;
-
     }
 
     .banner2{
@@ -127,17 +111,12 @@ export default {
     }
 
     @media screen and (max-width: 1070px) {
-
-
     .banner2{
-       
         margin-right: 10px;
     }
     }
 
     @media screen and (max-width: 950px) {
-
-
     .gradient2{
         position: absolute;
         width: 7%;
@@ -145,9 +124,7 @@ export default {
         background-color: #0f171e;
         top: 0;
         z-index: 0;
-
     }
-
     .banner2{
         width:300px; 
         height: 130px;
@@ -156,7 +133,6 @@ export default {
     }
 
     @media screen and (max-width: 750px) {
-
     .gradient2{
         position: absolute;
         width: 7%;
@@ -164,9 +140,7 @@ export default {
         background-color: #0f171e;
         top: 0;
         z-index: 0;
-
     }
-
     .banner2{
         width:300px !important; 
         height: 100px;

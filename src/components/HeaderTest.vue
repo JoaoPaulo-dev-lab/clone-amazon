@@ -5,7 +5,6 @@
             <div class="logo">
                 <img class="logo-prime" src="../assets/prime.png"/>
             </div>
-            
             <div class="menu-desktop">
                 <ul>
                     <li>
@@ -50,7 +49,6 @@
                         <i class="fa fa-search"></i>
                     </h4>
                     <input class="inp" type="text" placeholder="Busca">
-                    
             </div>
             <div style="display: flex; align-items: center;" class="more-plus">
                 <span>
@@ -61,7 +59,6 @@
                 </span>
             </div>
         </div>
-        
     </header>
   </div>
 </template>
@@ -208,7 +205,6 @@ export default {
     @media screen and (max-width: 400px) {
         header .logo-prime{
         max-width: 80px;
-        
     }
     }
 </style>
