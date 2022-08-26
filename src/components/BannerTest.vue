@@ -1,13 +1,9 @@
 <template>
-    
         <div class="container-slider">
             <carousel   :items-to-show="1">
             <slide   v-for="banner in banners" :key="banner.id">
-                <div :style="{'background-image': `url(${banner.bannerURL})`}" class="banner">
-
-                </div>
+                <div :style="{'background-image': `url(${banner.bannerURL})`}" class="banner"></div>
             </slide>
-
             <template #addons>
                 <div >
                     <navigation  />
@@ -17,7 +13,6 @@
             <div class="gradient left"></div>
             <div class="gradient right"></div>
         </div>
-    
 </template>
 
 <script>
@@ -68,7 +63,6 @@ export default {
         position: relative;
         margin: 10px 0 35px 0;
     }
-
     .gradient{
         position: absolute;
         width: 7%;
@@ -114,8 +108,7 @@ export default {
     }
 
     .carousel__prev,.carousel__next{display: none !important;}
-    .carousel__icon{display:none;}
-       
+    .carousel__icon{display:none;} 
        .banner{
         width: 100%;
         height: 27vh; 
