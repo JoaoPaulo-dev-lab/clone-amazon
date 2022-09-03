@@ -23,24 +23,9 @@
             </div>
         </div>
             <div class="menu-mobile">
-                <div :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
-                    <ul>
-                        <li>
-                        <a href="">Início</a>
-                        </li>
-                        <li>
-                            <a href="">Filmes</a>
-                        </li>
-                        <li>
-                            <a href="">Series</a>
-                        </li>
-                        <li>
-                            <a href="">Infantil</a>
-                        </li>
-                    </ul>
-                </div>
+                
                 <a class="icon-menu">
-                    <i @click="showMenu()" class="fa fa-bars"></i>
+                    <i @click="showMobileMenu = !showMobileMenu" class="fa fa-bars"></i>
                 </a>
             </div>
         <div  class="search-container">
@@ -59,6 +44,22 @@
                 </span>
             </div>
         </div>
+        <div class="children-menu-mobile" v-if="showMobileMenu">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa fa-home" style="margin-right: 3px"></i> Início</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-film" style="margin-right: 3px"></i> Filmes</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-video" style="margin-right: 3px"></i> Series</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-children" style="margin-right: 3px"></i> Infantil</a>
+                        </li>
+                    </ul>
+                </div>
     </header>
   </div>
 </template>
@@ -72,9 +73,7 @@ export default {
         };
     },
     methods: {
-        showMenu() {
-            this.showMobileMenu = !this.showMobileMenu
-        }
+        
     }
 }
 </script>
@@ -90,6 +89,7 @@ export default {
         display: flex;
         justify-content: space-between;/*Separar os elementos irmãos*/
         align-items: center;
+        position: relative;
     }
     
     header .content-header-1{
@@ -148,6 +148,22 @@ export default {
         cursor: pointer;
     }
 
+    header .children-menu-mobile{
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        z-index: 90999000;
+        background-color: #0f171e !important;
+    }
+
+    header .children-menu-mobile ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+    }
+
     .menu-desktop ul{
         display: flex;
         align-items: center;
@@ -181,24 +197,28 @@ export default {
             display: flex;
         }
         /* Daqui em diante*/
-        header .menu-mobile ul li{
+        header .children-menu-mobile ul li{
             display: block;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
         }
-        header .menu-mobile ul li a{
+        header .children-menu-mobile ul li a{
             list-style: none;
             color: rgb(242, 244, 247, .9);
             font-weight: bold;
             letter-spacing: 1px;
             font-size: 16px;
+            text-decoration: none;
+            display: flex;
+            padding: 20px 0;
+            justify-content: center;
+            border-bottom: 1px solid #284866;
+            transition: 0.6s
         }
-        .open-menu {
-            opacity: 1;
-            transition: 1s;
-        }
-        .closed-menu {
-            opacity: 0;
-            height: 0;
-            padding: 0;
+
+        header .children-menu-mobile ul li a:hover{
+            background-color: #04101b;
         }
     }
 

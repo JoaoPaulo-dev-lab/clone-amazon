@@ -6,6 +6,10 @@
     <MoreMovies :banners="banners1"/>
     <div class="span">Mais assistidos</div>
     <MoreMovies :banners="banners2"/>
+    <div class="span">Mais assistidos</div>
+    <MoreMovies :banners="banners2"/>
+    <div class="span">Mais assistidos</div>
+    <MoreMovies :banners="banners2"/>
   </div>
 </template>
 
@@ -102,8 +106,11 @@ export default {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    background-color: #0f171e;
   }
+
+    body{
+        background-color: #0f171e;
+    }
 
   .span{
     color: #fff;
