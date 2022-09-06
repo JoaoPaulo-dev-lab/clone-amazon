@@ -4,7 +4,7 @@
     <BannerTest/>
     <div class="span">Assista a seguir</div>
     <MoreMovies :banners="banners1"/>
-    <div class="span">Mais assistidos</div>
+    <div class="span">Mais assistidos no momento</div>
     <MoreMovies :banners="banners2"/>
     <div class="span">Filmes recomendados</div>
     <MoreMovies :banners="banners3"/>
