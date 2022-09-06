@@ -12,6 +12,8 @@
     <MoreMovies :banners="banners4"/>
     <div class="span">Filmes de comédia</div>
     <MoreMovies :banners="banners5"/>
+    <div class="span">Explore o mundo de J. R. R. Tolkien</div>
+    <MoreMovies :banners="banners6"/>
   </div>
 </template>
 
@@ -191,6 +193,36 @@ const banners5 = [
         bannerURL: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7aef0e85be40b55a6a16bdee18917efaa640bdacf4b74d7abb7f90b125c65cb7._UY500_UX667_RI_V_TTW_.jpg'
     }
 ]
+const banners6 = [
+    {
+        id: 1,
+        bannerURL: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/60800ed894e31ddca667b81a24f6b729018180e1ea7009cf5f73c9d865ace157._UY500_UX667_RI_V_TTW_.jpg'
+    },
+    {
+        id: 2,
+        bannerURL: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7627b4bc590d30635ab63835635282e4ff8a98d52c9c7b76a93cd2e79336db5c._UY500_UX667_RI_V_TTW_.jpg'
+    },
+    {
+        id: 3,
+        bannerURL: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/b82a6fd634ffa4f0790cdf186a2e76a0f0025d0cd8ac6f69ae01cac0641484a4._V_SX1080_.jpg'
+    },
+    {
+        id: 4,
+        bannerURL: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/d7574db909511a370761aeffae73cb964b657a4c23111e41d0894080c6df3ea7._UY500_UX667_RI_V_TTW_.jpg'
+    },
+    {
+        id: 5,
+        bannerURL: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/612b78b68598a9c02482d621bfc08d12cb6f7e9447f050030885058bc2c3afec._UY500_UX667_RI_V_TTW_.jpg'
+    },
+    {
+        id: 6,
+        bannerURL: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/8cc15cef464265a8ea09d0cfe85ce375ca1e6cc5f93fe8e679ccd8169e9ba75b._UY500_UX667_RI_V_TTW_.jpg'
+    },
+    {
+        id: 7,
+        bannerURL: 'https://img.olhardigital.com.br/wp-content/uploads/2022/02/os-aneis-do-poder.jpg'
+    },
+]
 
 export default {
     name: 'App',
@@ -200,7 +232,8 @@ export default {
         banners2,
         banners3,
         banners4,
-        banners5
+        banners5,
+        banners6
       }
     },
     components: { HeaderTest, BannerTest, MoreMovies }
@@ -220,8 +253,8 @@ export default {
     }
 
   .span{
-    color: #fff;
-    font-size:11px;
+    color: rgb(242, 244, 247, .9);
+    font-size:13px;
     font-weight: bold;
     padding: 0 7%;
     margin-bottom: 5px;
