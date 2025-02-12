@@ -72,9 +72,6 @@ export default {
             showMobileMenu: false,
         };
     },
-    methods: {
-        
-    }
 }
 </script>
 
